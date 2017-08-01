@@ -193,16 +193,20 @@
                 },
                 "env": [
                   {
-                    "name": "MYSQL_USER",
+                    "name": "db.user",
                     "value": "${MYSQL_USER}"
                   },
                   {
-                    "name": "MYSQL_PASSWORD",
+                    "name": "db.password",
                     "value": "${MYSQL_PASSWORD}"
                   },
                   {
-                    "name": "MYSQL_DATABASE",
+                    "name": "db.name",
                     "value": "${MYSQL_DATABASE}"
+                  },
+                  {
+                    "name": "db.host",
+                    "value": "database"
                   }
                 ],
                 "resources": {},
