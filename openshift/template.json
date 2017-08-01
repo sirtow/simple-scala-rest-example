@@ -26,7 +26,7 @@
             "name": "web",
             "protocol": "TCP",
             "port": 5432,
-            "targetPort": 8080,
+            "targetPort": 9090,
             "nodePort": 0
           }
         ],
@@ -178,7 +178,7 @@
                 ],
                 "livenessProbe": {
                   "httpGet": {
-                    "path": "/",
+                    "path": "/customer",
                     "port": 9090
                   },
                   "initialDelaySeconds": 260,
@@ -186,7 +186,7 @@
                 },
                 "readinessProbe": {
                   "httpGet": {
-                    "path": "/",
+                    "path": "/customer",
                     "port": 9090
                   },
                   "timeoutSeconds": 1
