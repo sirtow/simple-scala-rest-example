@@ -45,7 +45,7 @@
       "kind": "Route",
       "apiVersion": "v1",
       "metadata": {
-        "name": "keyvalue-route"
+        "name": "customer-rest"
       },
       "spec": {
         "to": {
@@ -193,20 +193,24 @@
                 },
                 "env": [
                   {
-                    "name": "db.user",
+                    "name": "db_user",
                     "value": "${MYSQL_USER}"
                   },
                   {
-                    "name": "db.password",
+                    "name": "db_password",
                     "value": "${MYSQL_PASSWORD}"
                   },
                   {
-                    "name": "db.name",
+                    "name": "db_name",
                     "value": "${MYSQL_DATABASE}"
                   },
                   {
-                    "name": "db.host",
+                    "name": "db_host",
                     "value": "database"
+                  },
+                  {
+                    "name": "db_port",
+                    "value": "5434"
                   }
                 ],
                 "resources": {},
