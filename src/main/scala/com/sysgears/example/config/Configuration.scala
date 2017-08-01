@@ -26,7 +26,7 @@ trait Configuration {
 
 
   /** Database host port number. */
-  lazy val dbPort = Try(sys.env("db_port")).getOrElse(
+  lazy val dbPort = Try(sys.env("db_port").toInt).getOrElse(
     Try(config.getInt("db.port")).getOrElse(3306)
   )
 
